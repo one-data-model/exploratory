@@ -1,3 +1,3 @@
-# experimental
+# exploratory
 
-This repo contains SDF models that are experimental.
+This repo contains SDF models that are exploratory.
