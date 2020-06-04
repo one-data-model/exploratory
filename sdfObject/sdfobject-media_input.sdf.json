@@ -1,0 +1,49 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+    "title": "Media Source Input",
+    "version": "2019-07-29"
+  },
+  "sdfObject": {
+    "media.input": {
+      "description": "This Resource provides the list of input media sources available on the device. The sources are an array of Media Source(s) see Resource Type \"oic. r. mediasource\"",
+      "sdfProperty": {
+        "sources": {
+          "items": {
+            "properties": {
+              "sourceName": {
+                "description": "Specifies a pre-defined media input or output",
+                "type": "string"
+              },
+              "sourceNumber": {
+                "description": "Label to specify the instance",
+                "writable": false,
+                "type": "string"
+              },
+              "sourceType": {
+                "description": "Specifies the type of the source",
+                "enum": [
+                  "audioOnly",
+                  "videoOnly",
+                  "audioPlusVideo"
+                ],
+                "writable": false,
+                "type": "string"
+              },
+              "status": {
+                "description": "Specifies if the specific source instance is selected or not",
+                "type": "boolean"
+              }
+            },
+            "type": "object"
+          },
+          "type": "array"
+        }
+      },
+      "sdfRequired": [
+        "0/sdfProperty/sources"
+      ]
+    }
+  }
+}

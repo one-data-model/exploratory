@@ -1,0 +1,51 @@
+{
+  "info": {
+    "copyright": "copyright 2016-2017, 2019 Open Connectivity Foundation, Inc. All rights reserved.",
+    "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+    "title": "Print Queue",
+    "version": "2019-02-15"
+  },
+  "sdfObject": {
+    "printer.queue": {
+      "description": "This Resource describes the items in a Printer Queue. The Properties \"uri\" and \"status\" are read only items that cannot be changed through this resource.",
+      "sdfProperty": {
+        "queue": {
+          "description": "The array of queue items for the printer.",
+          "items": {
+            "properties": {
+              "status": {
+                "description": "The status of the queue item.",
+                "enum": [
+                  "Printing",
+                  "Pending",
+                  "Paused",
+                  "Error",
+                  "Unknown"
+                ],
+                "writable": false,
+                "type": "string"
+              },
+              "uri": {
+                "description": "The uri of the queue item (i.e. the actual file).",
+                "format": "uri",
+                "maxLength": 256,
+                "writable": false,
+                "type": "string"
+              }
+            },
+            "required": [
+              "uri",
+              "status"
+            ],
+            "type": "object"
+          },
+          "writable": false,
+          "type": "array"
+        }
+      },
+      "sdfRequired": [
+        "0/sdfProperty/queue"
+      ]
+    }
+  }
+}
