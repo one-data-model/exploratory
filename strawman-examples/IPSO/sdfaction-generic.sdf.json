@@ -1,0 +1,18 @@
+{
+  "info": {
+    "title": "sdfProperty definitions for IPSO definitions", 
+    "version": "20201111", 
+    "copyright": "Copyright 2020 Example Corp.\n        All rights reserved.", 
+    "license": "http://example.com/license"
+  }, 
+  "namespace": {
+    "ex": "https://onedm.org/exploratory/"
+  }, 
+  "defaultNamespace": "ex", 
+
+  "sdfAction": {
+    "resetMinMax": {
+        "id": "5605"
+    }
+  }
+}

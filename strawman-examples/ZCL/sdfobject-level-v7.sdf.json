@@ -26,7 +26,7 @@
       "sdfProperty": {
         "CurrentLevel": {
           "label": "CurrentLevel", 
-          "$ref": "#/sdfObject/Level/sdfData/LevelData"
+          "sdfRef": "#/sdfObject/Level/sdfData/LevelData"
         }, 
         "RemainingTime": {
           "sdfRef": "#/sdfObject/Level/sdfData/TransitionTimeData", 
@@ -35,23 +35,23 @@
         },
         "MinLevel": {
           "label": "MinLevel", 
-          "$ref": "#/sdfObject/Level/sdfData/LevelData"
+          "sdfRef": "#/sdfObject/Level/sdfData/LevelData"
         },
         "MaxLevel": {
           "label": "MaxLevel", 
-          "$ref": "#/sdfObject/Level/sdfData/LevelData"
+          "sdfRef": "#/sdfObject/Level/sdfData/LevelData"
         },
         "CurrentFrequency": {
           "label": "CurrentFrequency", 
-          "$ref": "#/sdfObject/Level/sdfData/FrequencyData"
+          "sdfRef": "#/sdfObject/Level/sdfData/FrequencyData"
         },
         "MinFrequency": {
           "label": "CurrentFrequency", 
-          "$ref": "#/sdfObject/Level/sdfData/FrequencyData"
+          "sdfRef": "#/sdfObject/Level/sdfData/FrequencyData"
         },
         "MaxFrequency": {
           "label": "CurrentFrequency", 
-          "$ref": "#/sdfObject/Level/sdfData/FrequencyData"
+          "sdfRef": "#/sdfObject/Level/sdfData/FrequencyData"
         },
         "OnOffTransitionTime": {
           "sdfRef": "#/sdfObject/Level/sdfData/TransitionTimeData", 
@@ -89,19 +89,28 @@
         },
         "StartUpCurrentLevel": {
           "label": "StartUpCurrentLevel", 
-          "type": "number", 
-          "minimum": 1, 
-          "maximum": 254,
-          "sdfEnum": {
-            "MinimumDeviceValuePermitted": {
-            "type": "number",
-            "default": 0
+          "anyOf": [
+            {
+              "description": "Set to this predefined level on startup",
+              "type": "number", 
+              "minimum": 1, 
+              "maximum": 254
             },
-            "SetToPreviousValue": {
-            "type": "number",
-            "default": 255
+            {
+              "sdfEnum": {
+                "MinimumDeviceValuePermitted": {
+                  "description": "Set to the minimum allowable value on startup",
+                  "type": "number",
+                  "const": 0
+                },
+                "SetToPreviousValue": {
+                  "description": "Set to the last previously set value on startup",
+                  "type": "number",
+                  "const": 255
+                }
+              }
             }
-          }
+          ]
         } 
       },
       "sdfAction": {
@@ -147,7 +156,7 @@
           "sdfData": {
             "MoveMode": {
               "label": "MoveMode", 
-              "$ref": "#/sdfObject/Level/sdfData/MoveStepMode"
+              "sdfRef": "#/sdfObject/Level/sdfData/MoveStepMode"
             }, 
             "Rate": {
               "label": "Rate", 
@@ -180,7 +189,7 @@
           "sdfData": {
             "StepMode": {
               "label": "Step mode", 
-              "$ref": "#/sdfObject/Level/sdfData/MoveStepMode"
+              "sdfRef": "#/sdfObject/Level/sdfData/MoveStepMode"
             }, 
             "StepSize": {
               "label": "Step size", 

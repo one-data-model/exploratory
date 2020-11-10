@@ -1,0 +1,51 @@
+{
+  "info": {
+    "title": "Generic Sensor from IPSO definitions", 
+    "version": "20201111", 
+    "copyright": "Copyright 2020 Example Corp.\n        All rights reserved.", 
+    "license": "http://example.com/license"
+  }, 
+  "namespace": {
+    "ex": "https://onedm.org/exploratory/"
+  }, 
+  "defaultNamespace": "ex", 
+  "sdfObject": {
+    "genericSensor": {
+      "id": "3300", 
+      "sdfRequired": [
+        "#/sdfObject/genericSensor/sdfProperty/sensorValue"
+      ],
+      "sdfProperty": {
+        "sensorValue": {
+          "sdfRef": "ex#/sdfProperty/sensorValue"
+        }, 
+        "minimumMeasuredValue": {
+          "sdfRef": "ex#/sdfProperty/minimumMeasuredValue"
+        }, 
+        "maximumMeasuredValue": {
+          "sdfRef": "ex#/sdfProperty/maximumMeasuredValue"
+        }, 
+        "minimumRangeValue": {
+          "sdfRef": "ex#/sdfProperty/minimumRangeValue"
+        }, 
+        "maximumRangeValue": {
+          "sdfRef": "ex#/sdfProperty/maximumRangeValue"
+        }, 
+        "applicationType": {
+          "sdfRef": "ex#/sdfProperty/applicationType"
+        }, 
+        "sensorType": {
+          "sdfRef": "ex#/sdfProperty/sensorType"
+        }, 
+        "units": {
+          "sdfRef": "ex#/sdfProperty/units"
+        }
+      }, 
+      "sdfAction": {
+        "resetMinMax": {
+          "sdfRef": "ex#/sdfAction/resetMinMax"
+        }
+      }
+    }
+  }
+}
