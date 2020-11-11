@@ -14,52 +14,55 @@
     "MediaCore": {
       "sdfProperty": {
         "genres": {
-          "sdfRef": "#/sdfData/MediaGenre",
-          "multiInstance": true
+          "type": "array",
+          "items": {
+            "sdfRef": "#/sdfData/MediaGenre"
+          }
         }
       }
     }
   },
   "sdfData": {
     "MediaGenre": {
-        "sdfData": {
-          "category": {
-            "sdfRef": "#/sdfData/MediaCategory",
-            "description": "Genre Category for Media Information."
-          },
-          "subcategory": {
-            "sdfRef": "#/sdfData/MediaSubCategory",
-            "description": "Genre Sub-Category for Media Information."
-          }
+      "type": "object",
+      "properties": {
+        "category": {
+          "sdfRef": "#/sdfData/MediaCategory",
+          "description": "Genre Category for Media Information."
+        },
+        "subcategory": {
+          "sdfRef": "#/sdfData/MediaSubCategory",
+          "description": "Genre Sub-Category for Media Information."
         }
+      }
     },
     "MediaCategory": {
-        "sdfEnum": {
-            "Music": {
-                "type": "string",
-                "const": "Music",
-                "description": "https://en.wikipedia.org/wiki/Music"
-            },
-            "MotionPicture": {
-                "type": "string",
-                "const": "MotionPicture",
-                "description": "https://en.wikipedia.org/wiki/Film"
-            }
+      "sdfEnum": {
+        "Music": {
+          "type": "string",
+          "const": "Music",
+          "description": "https://en.wikipedia.org/wiki/Music"
+        },
+        "MotionPicture": {
+          "type": "string",
+          "const": "MotionPicture",
+          "description": "https://en.wikipedia.org/wiki/Film"
         }
+      }
     },
     "MediaSubCategory": {
-        "sdfEnum": {
-            "Rock": {
-                "type": "string",
-                "const": "Rock",
-                "description": "https://en.wikipedia.org/wiki/Rock_music"
-            },
-            "Pop": {
-                "type": "string",
-                "const": "Pop",
-                "description": "https://en.wikipedia.org/wiki/Pop_music"
-            }
+      "sdfEnum": {
+        "Rock": {
+          "type": "string",
+          "const": "Rock",
+          "description": "https://en.wikipedia.org/wiki/Rock_music"
+        },
+        "Pop": {
+          "type": "string",
+          "const": "Pop",
+          "description": "https://en.wikipedia.org/wiki/Pop_music"
         }
+      }
     }     
   }
 }

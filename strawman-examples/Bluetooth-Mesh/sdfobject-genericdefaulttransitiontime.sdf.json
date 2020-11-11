@@ -20,7 +20,8 @@
       "sdfData": {
         "TransitionTimeData": {
           "description": "Generic Transition Time Format",
-          "sdfData": {
+          "type": "object",
+          "properties": {
             "Steps": {
               "description": "Number of steps",
               "type": "number",
@@ -32,16 +33,16 @@
               "description": "Resolution per Step",
               "sdfEnum": {
                 "100 mS": {
-                  "const": 1
+                  "description": "Map to 1 in Zigbee, .1 in XYZ"
                 }, 
                 "1 Second": {
-                  "const": 2
+                  "description": "Map to 2 in Zigbee, 1 in XYZ"
                 }, 
                 "10 Seconds": {
-                  "const": 3
+                  "description": "Map to 3 in Zigbee, 10 in XYZ"
                 }, 
                 "10 Minutes": {
-                  "const": 4
+                  "description": "Map to 4 in Zigbee, 6000 in XYZ"
                 }
               }
             }

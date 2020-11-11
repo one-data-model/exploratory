@@ -286,7 +286,8 @@
         },
         "LevelOptions": {
           "description": "bitmap modeled as a compound boolean instead of an array with unique items",
-          "sdfData": {
+          "type": "object",
+          "properties": {
             "ExecuteIfOff": {
               "type": "boolean"
             }, 

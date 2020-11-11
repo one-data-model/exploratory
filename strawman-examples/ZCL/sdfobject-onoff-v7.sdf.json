@@ -87,9 +87,11 @@
         }, 
         "OnWithTimedOff": {
           "label": "OnWithTimedOff", 
-          "sdfData": {
+          "type": "object",
+          "properties": {
             "OnOffControl": {
-              "sdfData" : {
+              "type": "object",
+              "properties" : {
                 "AcceptOnlyWhenOn": {
                   "type": "boolean"
                 }
