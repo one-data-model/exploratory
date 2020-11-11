@@ -18,7 +18,7 @@
       "sdfObject": {
         "HighRangeSensor": {
           "id": "3300/0",
-          "sdfRef": "ex#/sdfObject/genericSensor", 
+          "sdfRef": "ex:#/sdfObject/genericSensor", 
           "sdfProperty": {
             "minimumRange": {
               "const": -120000
@@ -39,7 +39,7 @@
         }, 
         "LowRangeSensor": {
           "id": "3300/1",
-          "sdfRef": "ex#/sdfObject/genericSensor", 
+          "sdfRef": "ex:#/sdfObject/genericSensor", 
           "sdfProperty": {
             "minimumRange": {
               "const": 0

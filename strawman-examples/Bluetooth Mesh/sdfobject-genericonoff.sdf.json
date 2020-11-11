@@ -61,7 +61,7 @@
           ]
         },
         "TransitionTimeData": {
-          "sdfRef": "ex#/sdfObject/GenericDefaultTransitionTime/sdfData/TransitionTimeData"
+          "sdfRef": "ex:#/sdfObject/GenericDefaultTransitionTime/sdfData/TransitionTimeData"
         },
         "DelayData": {
           "description": "delay in increments of 5mS",
