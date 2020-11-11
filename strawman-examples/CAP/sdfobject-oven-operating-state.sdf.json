@@ -70,7 +70,9 @@
             "pg:/sdfObject/ovenMode/sdfAction/start/sdfData/ovenMode"
           ],
           "sdfData": {
-            "sdfRef": "pg:/sdfData/OvenMode"
+            "ovenMode": {
+              "sdfRef": "pg:/sdfData/OvenMode"
+            }
           }
         }
       }
