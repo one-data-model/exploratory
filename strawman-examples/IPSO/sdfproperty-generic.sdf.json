@@ -6,46 +6,46 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/"
+    "ex": "https://onedm.org/exploratory/#"
   }, 
   "defaultNamespace": "ex", 
 
   "sdfProperty": {
     "sensorValue": {
-      "id": "5700", 
+      "description": "resource ID 5700", 
       "type": "number", 
       "subtype": "float"
     }, 
     "minimumMeasuredValue": {
-      "id": "5601", 
+      "description": "resource ID 5601", 
       "type": "number", 
       "subtype": "float"
     }, 
     "maximumMeasuredValue": {
-      "id": "5602", 
+      "description": "resource ID 5602", 
       "type": "number", 
       "subtype": "float"
     }, 
     "minimumRangeValue": {
-      "id": "5603", 
+      "description": "resource ID 5603", 
       "type": "number", 
       "subtype": "float"
     }, 
     "maximumRangeValue": {
-      "id": "5604", 
+      "description": "resource ID 5604", 
       "type": "number", 
       "subtype": "float"
     }, 
     "applicationType": {
-      "id": "5750", 
+      "description": "resource ID 5750", 
       "type": "string"
     }, 
     "sensorType": {
-      "id": "5750", 
+      "description": "resource ID 5751", 
       "type": "string"
     }, 
     "units": {
-      "id": "5750", 
+      "description": "resource ID 5701", 
       "type": "string"
     }
   }

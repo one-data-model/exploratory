@@ -6,13 +6,13 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/"
+    "ex": "https://onedm.org/exploratory/#"
   }, 
   "defaultNamespace": "ex", 
 
   "sdfAction": {
     "resetMinMax": {
-        "id": "5605"
+        "description": "See IPSO Resource ID 5605"
     }
   }
 }

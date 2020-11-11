@@ -1,77 +1,97 @@
 {
   "info": {
-    "title": "Example file for Semantic Definition Format", 
+    "title": "Oven Mode Enum Data Type Definition", 
     "version": "20200603", 
     "copyright": "Copyright 2019 Example Corp.\n        All rights reserved.", 
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/"
+    "ex": "https://onedm.org/exploratory/#"
   }, 
   "defaultNamespace": "ex", 
+
   "sdfData": {
     "OvenMode": {
       "label": "Oven Mode",
-      "type": "string",
-      "enum": [
-        "heating",
-        "grill",
-        "warming",
-        "defrosting",
-        "Conventional",
-        "Bake",
-        "BottomHeat",
-        "ConvectionBake",
-        "ConvectionRoast",
-        "Broil",
-        "ConvectionBroil",
-        "SteamCook",
-        "SteamBake",
-        "SteamRoast",
-        "SteamBottomHeatplusConvection",
-        "Microwave",
-        "MWplusGrill",
-        "MWplusConvection",
-        "MWplusHotBlast",
-        "MWplusHotBlast2",
-        "SlimMiddle",
-        "SlimStrong",
-        "SlowCook",
-        "Proof",
-        "Dehydrate",
-        "Others"
-      ],
       "sdfEnum": {
         "heating": {
-          "default": "heating"
+          "description": "heating"
         },
         "grill": {
-          "default": "grill"
+          "description": "grill"
         },
-        "warming": {},
-        "defrosting": {},
-        "Conventional": {},
-        "Bake": {},
-        "BottomHeat": {},
-        "ConvectionBake": {},
-        "ConvectionRoast": {},
-        "Broil": {},
-        "ConvectionBroil": {},
-        "SteamCook": {},
-        "SteamBake": {},
-        "SteamRoast": {},
-        "SteamBottomHeatplusConvection": {},
-        "Microwave": {},
-        "MWplusGrill": {},
-        "MWplusConvection": {},
-        "MWplusHotBlast": {},
-        "MWplusHotBlast2": {},
-        "SlimMiddle": {},
-        "SlimStrong": {},
-        "SlowCook": {},
-        "Proof": {},
-        "Dehydrate": {},
-        "Others": {}          
+        "warming": {
+          "description": "warming"
+        },
+        "defrosting": {
+          "description": "defrosting"
+        },
+        "Conventional": {
+          "description": "Conventional"
+        },
+        "Bake": {
+          "description": "Bake"
+        },
+        "BottomHeat": {
+          "description": "BottomHeat"
+        },
+        "ConvectionBake": {
+          "description": "ConvectionBake"
+        },
+        "ConvectionRoast": {
+          "description": "ConvectionRoast"
+        },
+        "Broil": {
+          "description": "Broil"
+        },
+        "ConvectionBroil": {
+          "description": "ConvectionBroil"
+        },
+        "SteamCook": {
+          "description": "SteamCook"
+        },
+        "SteamBake": {
+          "description": "SteamBake"
+        },
+        "SteamRoast": {
+          "description": "SteamRoast"
+        },
+        "SteamBottomHeatplusConvection": {
+          "description": "SteamBottomHeatplusConvection"
+        },
+        "Microwave": {
+          "description": "Microwave"
+        },
+        "MWplusGrill": {
+          "description": "MWplusGrill"
+        },
+        "MWplusConvection": {
+          "description": "MWplusConvection"
+        },
+        "MWplusHotBlast": {
+          "description": "MWplusHotBlast"
+        },
+        "MWplusHotBlast2": {
+          "description": "MWplusHotBlast2"
+        },
+        "SlimMiddle": {
+          "description": "SlimMiddle"
+        },
+        "SlimStrong": {
+          "description": "SlimStrong"
+        },
+        "SlowCook": {
+          "description": "SlowCook"
+        },
+        "Proof": {
+          "description": "Proof"
+        },
+        "Dehydrate": {
+          "description": "Dehydrate"
+        },
+        "Others": {
+          "description": "Others"
+        }          
       }
     }
   }

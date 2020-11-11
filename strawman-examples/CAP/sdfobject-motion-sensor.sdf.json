@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/"
+    "ex": "https://onedm.org/exploratory/#"
   }, 
   "defaultNamespace": "ex", 
   "sdfObject": {
@@ -29,8 +29,6 @@
   },
   "sdfData": {
     "activityState": {
-      "type": "string",
-      "enum": [ "active", "inactive"],
       "sdfEnum": {
         "active": {
           "description": "The active state",
@@ -38,9 +36,9 @@
           "default": "active"
         },
         "inactive": {
-            "description": "The inctive state",
-            "type": "string",
-            "default": "inactive"  
+          "description": "The inctive state",
+          "type": "string",
+          "default": "inactive"  
         }
       }
     }

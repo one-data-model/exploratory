@@ -1,14 +1,16 @@
 {
   "info": {
     "title": "Example file for Semantic Definition Format", 
-    "version": "20200603", 
+    "version": "20201111", 
     "copyright": "Copyright 2019 Example Corp.\n        All rights reserved.", 
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/"
+    "ex": "https://onedm.org/exploratory/#",
+    "pg": "https://onedm.org/playground/#"
   }, 
   "defaultNamespace": "ex", 
+
   "sdfObject": {
     "ovenOperatingState": {
       "label": "Oven Operating State",
@@ -60,18 +62,18 @@
           ],          
           "sdfData": {
             "ovenMode": {
-              "sdfRef": "pg:/sdfData/OvenMode"
+              "sdfRef": "ex:/sdfData/OvenMode"
             }
           }
         },
         "stop": {},
         "start": {
           "sdfInputData": [
-            "pg:/sdfObject/ovenMode/sdfAction/start/sdfData/ovenMode"
+            "#/sdfObject/ovenMode/sdfAction/start/sdfData/ovenMode"
           ],
           "sdfData": {
             "ovenMode": {
-              "sdfRef": "pg:/sdfData/OvenMode"
+              "sdfRef": "ex:/sdfData/OvenMode"
             }
           }
         }

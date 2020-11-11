@@ -1,12 +1,12 @@
 {
   "info": {
     "title": "Vacuum Gauge Thing using IPSO definitions", 
-    "version": "20200603", 
+    "version": "20201111", 
     "copyright": "Copyright 2020 Example Corp.\n        All rights reserved.", 
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/"
+    "ex": "https://onedm.org/exploratory/#"
   }, 
   "defaultNamespace": "ex", 
   "sdfProduct": {
@@ -17,8 +17,8 @@
       ],
       "sdfObject": {
         "HighRangeSensor": {
-          "id": "3300/0",
-          "sdfRef": "ex:#/sdfObject/genericSensor", 
+          "description": "Map to Object Instance ID 3300/0",
+          "sdfRef": "ex:/sdfObject/genericSensor", 
           "sdfProperty": {
             "minimumRange": {
               "const": -120000
@@ -38,8 +38,8 @@
           }
         }, 
         "LowRangeSensor": {
-          "id": "3300/1",
-          "sdfRef": "ex:#/sdfObject/genericSensor", 
+          "description": "Map to Object Instance ID 3300/1",
+          "sdfRef": "ex:/sdfObject/genericSensor", 
           "sdfProperty": {
             "minimumRange": {
               "const": 0
