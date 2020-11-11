@@ -1,0 +1,150 @@
+{
+  "info": {
+    "title": "Example BT Mesh Sensor State Model", 
+    "version": "20201111", 
+    "copyright": "Copyright 2019 Michael Koster. All rights reserved.", 
+    "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE"
+  }, 
+  "namespace": {
+    "ex": "https://onedm.org/exploratory/"
+  }, 
+  "defaultnamespace": "ex", 
+
+  "sdfData": {
+    "SensorDescriptor": {
+      type : "composition"
+      "properties": {
+        "SensorPropertyID": {
+          "sdfRef": "#/sdfData/PropertyIdType"
+        }, 
+        "SensorPositiveTolerance": {
+          "type": "number", 
+          "multipleOf": 1, 
+          "minimum": 1, 
+          "maximum": 4095
+        }, 
+        "SensorNegativeTolerance": {
+          "type": "number", 
+          "multipleOf": 1, 
+          "minimum": 1, 
+          "maximum": 4095
+        }, 
+        "SensorSamplingFunciton": {
+          "sdfEnum": {
+            "Unspecified": {}, 
+            "Instantaneous": {}, 
+            "ArithmeticMean": {}, 
+            "RMS": {}, 
+            "Maximum": {}, 
+            "Minimum": {}, 
+            "Accumulated": {}, 
+            "Count": {}
+          }
+        }, 
+        "SensorMeasurementPeriod": {
+          "type": "number", 
+          "multipleOf": 1, 
+          "minimum": 1, 
+          "maximum": 255
+        }, 
+        "SensorUpdateInterval": {
+          "type": "number", 
+          "multipleOf": 1, 
+          "minimum": 1, 
+          "maximum": 255
+        }
+      }
+    }, 
+    "SensorSetting": { 
+      "sdfData": {
+        "SensorPropertyID": {
+          "sdfRef": "#/sdfData/PropertyIdType"
+        }, 
+        "SensorSettingPropertyID": {
+          "sdfRef": "#/sdfData/PropertyIdType"
+        }, 
+        "SensorSettingAccess": {
+          "sdfEnum": {
+            "read": {}, 
+            "readwrite": {}
+          }
+        }, 
+        "SensorSettingRaw": {
+          "sdfRef": "#/sdfData/SensorSetting/sdfData/SensorSettingRawValueType"
+        },
+        "SensorSettingRawValueType": {
+          "description": "any type defined by the sensor"
+        }
+      }
+    }, 
+    "SensorCadence": {
+      "sdfData": {
+        "SensorPropertyID": {
+          "sdfRef": "#/sdfData/PropertyIdType"
+        }, 
+        "FastCadencePeriodDivisor": {
+          "type": "number", 
+          "minimum": 0, 
+          "maximum": 15
+        }, 
+        "StatusTriggerType": {
+          "sdfEnum": { 
+            "formattype": {
+              "description": "Format Type Trigger"
+            }, 
+            "unitless": {
+              "description": "Unitless Trigger"
+            } 
+          }
+        }, 
+        "StatusTriggerDeltaDown": {
+          "type": "number"
+        }, 
+        "StatusTriggerDeltaUp": {
+          "type": "number"
+        }, 
+        "StatusMinInterval": {
+          "type": "number", 
+          "multipleOf": 1, 
+          "minumum": 0, 
+          "maximum": 26
+        }, 
+        "FastCadenceLow": {
+          "type": "number"
+        }, 
+        "FastCadenceHigh": {
+          "type": "number"
+        }
+      }
+    },
+    "SensorData": {
+      "sdfData": {
+        "SensorDataType": {
+          "type": "array", 
+          "items": [
+            {
+              "type": "array", 
+              "items": [
+                {
+                  "sdfRef": "#/sdfData/PropertyIdType"
+                }, 
+                {
+                  "sdfRef": "#/sdfData/SensorData/sdfData/SensorDataRawValueType"
+                }
+              ]
+            }
+          ]
+        }, 
+        "SensorDataRawValueType": {
+          "description": "any type defined by the sensor"
+        }
+      }
+    },
+    "PropertyIdType": {
+      "type": "number", 
+      "multipleOf": 1, 
+      "minumum": 1, 
+      "maximum": 65535
+    }
+  }
+}
