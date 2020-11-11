@@ -102,7 +102,7 @@
         }
       },
       "sdfRequired": [
-        "0/sdfProperty/currentzonesensitivitylevel"
+        "#/sdfObject/iaszoneinfo/sdfProperty/currentzonesensitivitylevel"
       ]
     }
   }
