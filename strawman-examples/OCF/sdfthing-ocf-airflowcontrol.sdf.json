@@ -9,7 +9,9 @@
     "ex": "https://onedm.org/exploratory/#"
   }, 
   "defaultNamespace": "ex", 
+
   "sdfObject": {
+    
     "oic.r.switch.binary": {
       "name": "oic.r.switch.binary",
       "description" : "This sdfObject describes a binary switch (on/off).\nThe Property \"value\" is a boolean.\nA value of 'true' means that the switch is on.\nA value of 'false' means that the switch is off.\n",

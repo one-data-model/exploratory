@@ -1,0 +1,53 @@
+{
+  "info": {
+    "title": "Example BT Mesh Generic Default Transition Time Model", 
+    "version": "20200710", 
+    "copyright": "Copyright 2020 Michael J. Koster. All rights reserved.", 
+    "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE"
+  }, 
+  "namespace": {
+    "ex": "https://onedm.org/exploratory/"
+  }, 
+  "defaultNamespace": "ex", 
+  
+  "sdfObject": {
+    "GenericDefaultTransitionTime": {
+      "sdfProperty": {
+        "DefaultTransitionTime": {
+          "sdfRef": "#/sdfObject/GenericDefaultTransitionTime/sdfData/TransitionTimeData"
+        }
+      },
+      "sdfData": {
+        "TransitionTimeData": {
+          "description": "Generic Transition Time Format",
+          "sdfData": {
+            "Steps": {
+              "description": "Number of steps",
+              "type": "number",
+              "minimum": 0,
+              "maximum": 62,
+              "multipleOf": 1
+            },
+            "Resolution": {
+              "description": "Resolution per Step",
+              "sdfEnum": {
+                "100 mS": {
+                  "const": 1
+                }, 
+                "1 Second": {
+                  "const": 2
+                }, 
+                "10 Seconds": {
+                  "const": 3
+                }, 
+                "10 Minutes": {
+                  "const": 4
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
