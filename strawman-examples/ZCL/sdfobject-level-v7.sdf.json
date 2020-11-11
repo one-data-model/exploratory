@@ -91,8 +91,8 @@
           "label": "StartUpCurrentLevel", 
           "anyOf": [
             {
-              "description": "Set to this predefined level on startup",
               "type": "number", 
+              "description": "Set to this predefined level on startup",
               "minimum": 1, 
               "maximum": 254
             },
@@ -270,16 +270,12 @@
           "scaleMaximum": 6553.5
         },
         "MoveStepMode": {
-          "type": "number",
-          "enum": [0,1],
           "sdfEnum": {
             "Up": {
-              "type": "number",
-              "default": 0
+              "description": "increasing direction"
             },
             "Down": {
-              "type": "number",
-              "default": 1
+              "description": "decreasing direction"
             }
           }
         },
@@ -289,12 +285,14 @@
           "maximum": 254
         },
         "LevelOptions": {
-          "description": "implemented as a bitmap, modeled as an array with unique items",
-          "type": "array",
-          "uniqueitems": true,
-          "items": {
-            "type": "string",
-            "enum": ["ExecuteIfOff", "CoupleColorTempToLevel"]
+          "description": "bitmap modeled as a compound boolean instead of an array with unique items",
+          "sdfData": {
+            "ExecuteIfOff": {
+              "type": "boolean"
+            }, 
+            "CoupleColorTempToLevel": {
+              "type": "boolean"
+            }
           }
         },
         "FrequencyData": {

@@ -65,16 +65,14 @@
           "sdfData": {
             "EffectIdentifier": {
               "label": "EffectIdentifier", 
-              "type": "number",
-              "enum": [0,1],
               "sdfEnum": {
                 "DelayedAllOff": {
                   "type": "number",
-                  "default": 0
+                  "const": 0
                 },
                 "DyingLight": {
                   "type": "number",
-                  "default": 1
+                  "const": 1
                 }
               } 
             }, 
@@ -91,8 +89,7 @@
           "label": "OnWithTimedOff", 
           "sdfData": {
             "OnOffControl": {
-              "type": "object",
-              "properties" : {
+              "sdfData" : {
                 "AcceptOnlyWhenOn": {
                   "type": "boolean"
                 }
@@ -112,24 +109,22 @@
           "scaleMaximum": 6553.5
         },
         "StartUpOnOffMode": {
-          "type": "number",
-          "enum": [0,1,2,255],
           "sdfEnum": {
             "SetOnOffTo0": {
               "type": "number",
-              "default": "0"
+              "const": 0
             },
             "SetOnOffTo1": {
               "type": "number",
-              "default": "1"
+              "const": 1
             },
             "TogglePreviousOnOff": {
               "type": "number",
-              "default": "2"
+              "const": 2
             },
             "SetPreviousOnOff": {
               "type": "number",
-              "default": "FF"
+              "const": 255
             }
           }
         }
