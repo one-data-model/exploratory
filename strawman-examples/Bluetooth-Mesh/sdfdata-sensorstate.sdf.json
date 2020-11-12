@@ -8,7 +8,7 @@
   "namespace": {
     "ex": "https://onedm.org/exploratory/"
   }, 
-  "defaultnamespace": "ex", 
+  "defaultNamespace": "ex", 
 
   "sdfData": {
     "SensorDescriptor": {
