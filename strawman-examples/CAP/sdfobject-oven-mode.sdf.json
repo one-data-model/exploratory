@@ -32,15 +32,15 @@
       }, 
       "sdfAction": {
         "setOvenMode": { 
-          "sdfInputData": [
-            "#/sdfObject/ovenMode/sdfAction/setOvenMode/sdfData/ovenMode"
-          ],
           "sdfRequired": [
-            "#/sdfObject/ovenMode/sdfAction/setOvenMode/sdfData/ovenMode"
+            "#/sdfObject/ovenMode/sdfAction/setOvenMode/sdfInputData/properties/ovenMode"
           ],          
-          "sdfData": {
-            "ovenMode": {
-              "sdfRef": "pg:sdfData/OvenMode"
+          "sdfInputData": {
+            "type": "object",
+              "properties": {
+              "ovenMode": {
+                "sdfRef": "pg:sdfData/OvenMode"
+              }
             }
           }
         }

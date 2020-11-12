@@ -58,27 +58,26 @@
           "label": "OffWithEffect",
           "sdfRequired": [
           ],
-          "sdfInputData": [
-            "#/sdfObject/OnOff/sdfAction/OffWithEffect/sdfData/EffectIdentifier", 
-            "#/sdfObject/OnOff/sdfAction/OffWithEffect/sdfData/EffectVariant"
-          ],
-          "sdfData": {
-            "EffectIdentifier": {
-              "label": "EffectIdentifier", 
-              "sdfEnum": {
-                "DelayedAllOff": {
-                  "type": "number",
-                  "const": 0
-                },
-                "DyingLight": {
-                  "type": "number",
-                  "const": 1
-                }
-              } 
-            }, 
-            "EffectVariant": {
-              "label": "EffectVariant", 
-              "type": "number" 
+          "sdfInputData": {
+            "type": "object",
+            "properties": {
+              "EffectIdentifier": {
+                "label": "EffectIdentifier", 
+                "sdfEnum": {
+                  "DelayedAllOff": {
+                    "type": "number",
+                    "const": 0
+                  },
+                  "DyingLight": {
+                    "type": "number",
+                    "const": 1
+                  }
+                } 
+              }, 
+              "EffectVariant": {
+                "label": "EffectVariant", 
+                "type": "number" 
+              }
             }
           }
         },

@@ -54,26 +54,26 @@
       }, 
       "sdfAction": {
         "setMachineState": { 
-          "sdfInputData": [
-            "#/sdfObject/ovenOperatingState/sdfAction/setMachineState/sdfData/ovenMode"
-          ],
           "sdfRequiredInputData": [
-            "#/sdfObject/ovenOperatingState/sdfAction/setMachineState/sdfData/ovenMode"
+            "#/sdfObject/ovenOperatingState/sdfAction/setMachineState/sdfInputData/properties/ovenMode"
           ],          
-          "sdfData": {
-            "ovenMode": {
-              "sdfRef": "ex:/sdfData/OvenMode"
+          "sdfInputData": {
+            "type": "object",
+            "properties": {
+              "ovenMode": {
+                "sdfRef": "ex:/sdfData/OvenMode"
+              }
             }
           }
         },
         "stop": {},
         "start": {
-          "sdfInputData": [
-            "#/sdfObject/ovenMode/sdfAction/start/sdfData/ovenMode"
-          ],
-          "sdfData": {
-            "ovenMode": {
-              "sdfRef": "ex:/sdfData/OvenMode"
+          "sdfInputData": {            
+            "type": "object",
+            "properties": {
+              "ovenMode": {
+                "sdfRef": "ex:/sdfData/OvenMode"
+              }
             }
           }
         }
