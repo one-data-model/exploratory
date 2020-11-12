@@ -30,17 +30,17 @@
           "default": true
         }, 
         "OnTime": {
-          "sdfRef": "#/sdfData/TransitionTimeData", 
+          "sdfRef": "#/sdfObject/OnOff/sdfData/TransitionTimeData", 
           "label": "OnTime", 
           "default": 0
         }, 
         "OffWaitTime": {
-          "sdfRef": "#/sdfData/TransitionTimeData", 
+          "sdfRef": "#/sdfObject/OnOff/sdfData/TransitionTimeData", 
           "label": "OffWaitTime", 
           "default": 0
         }, 
         "StartUpOnOff": {
-          "sdfRef": "#/sdfData/StartUpOnOffMode", 
+          "sdfRef": "#/sdfObject/OnOff/sdfData/StartUpOnOffMode", 
           "label": "StartUpOnOff"
         }
       }, 

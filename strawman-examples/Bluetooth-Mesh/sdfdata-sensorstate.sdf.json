@@ -71,7 +71,7 @@
           }
         }, 
         "SensorSettingRaw": {
-          "sdfRef": "#/sdfData/SensorSetting/sdfData/SensorSettingRawValueType"
+          "sdfRef": "#/sdfData/SensorSetting/properties/SensorSettingRawValueType"
         },
         "SensorSettingRawValueType": {
           "description": "any type defined by the sensor"
@@ -132,7 +132,7 @@
                   "sdfRef": "#/sdfData/PropertyIdType"
                 }, 
                 {
-                  "sdfRef": "#/sdfData/SensorData/sdfData/SensorDataRawValueType"
+                  "sdfRef": "#/sdfData/SensorData/properties/SensorDataRawValueType"
                 }
               ]
             }
