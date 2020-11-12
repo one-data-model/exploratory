@@ -33,16 +33,16 @@
               "description": "Resolution per Step",
               "sdfEnum": {
                 "100 mS": {
-                  "description": "Map to 1 in Zigbee, .1 in XYZ"
+                  "description": "Map to 1 in BT"
                 }, 
                 "1 Second": {
-                  "description": "Map to 2 in Zigbee, 1 in XYZ"
+                  "description": "Map to 2 in BT"
                 }, 
                 "10 Seconds": {
-                  "description": "Map to 3 in Zigbee, 10 in XYZ"
+                  "description": "Map to 3 in BT"
                 }, 
                 "10 Minutes": {
-                  "description": "Map to 4 in Zigbee, 6000 in XYZ"
+                  "description": "Map to 4 in BT"
                 }
               }
             }
