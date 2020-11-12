@@ -233,7 +233,7 @@
         "MoveToClosestFrequency": {
           "label": "MoveToClosestFrequency",
           "sdfRequired": [
-            "#/sdfObject/Level/sdfAction/Stop/sdfInputData/properties/Frequency"
+            "#/sdfObject/Level/sdfAction/MoveToClosestFrequency/sdfInputData/properties/Frequency"
           ],
           "sdfInputData": {
             "type": "object",
