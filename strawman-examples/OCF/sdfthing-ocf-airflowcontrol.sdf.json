@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
 
@@ -47,11 +47,10 @@
         "automode" : {
           "label": "automode",
           "description": "The status of the automode feature, if on speed is set by the Device.",
-          "type": "string",
-          "enum": [
-            "On",
-            "Off"
-          ]
+          "sdfEnum": {
+            "On": {},
+            "Off": {}
+          }
         },
         "supporteddirections" : {
           "description": "The array of possible direction settings for this instance of the Resource Type.",

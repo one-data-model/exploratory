@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
   "sdfObject": {
@@ -86,13 +86,15 @@
         }, 
         "OnWithTimedOff": {
           "label": "OnWithTimedOff", 
-          "type": "object",
-          "properties": {
-            "OnOffControl": {
-              "type": "object",
-              "properties" : {
-                "AcceptOnlyWhenOn": {
-                  "type": "boolean"
+          "sdfInputData": {
+            "type": "object",
+            "properties": {
+              "OnOffControl": {
+                "type": "object",
+                "properties" : {
+                  "AcceptOnlyWhenOn": {
+                    "type": "boolean"
+                  }
                 }
               }
             }

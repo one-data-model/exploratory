@@ -6,7 +6,7 @@
     "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
   
@@ -20,7 +20,7 @@
       "sdfAction": {
         "OnOffGet": {
           "description": "Get the status of the On/Off server",
-          "sdfData": {
+          "sdfOutputData": {
             "type": "object",
             "properties": {
               "PresentOnOff": {
@@ -56,13 +56,13 @@
       "sdfData": {
         "GenericOnOffData": {
           "description": "the on/off state property, use a mapping file for encoded values",
-          "enum": [
-            "Off", 
-            "On"
-          ]
+          "sdfEnum": {
+            "Off": {}, 
+            "On": {}
+          }
         },
         "TransitionTimeData": {
-          "sdfRef": "ex:/sdfObject/GenericDefaultTransitionTime/sdfData/TransitionTimeData"
+          "sdfRef": "ex:#/sdfObject/GenericDefaultTransitionTime/sdfData/TransitionTimeData"
         },
         "DelayData": {
           "description": "delay in increments of 5mS",
