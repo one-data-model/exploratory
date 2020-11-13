@@ -22,7 +22,9 @@
       }, 
       "sdfEvent": {
         "stateChange": { 
-          "sdfOutputData" : [ "#/sdfData/activityState"]
+          "sdfOutputData" : {
+            "sdfRef": "#/sdfData/activityState"
+          }
         }
       }
     }

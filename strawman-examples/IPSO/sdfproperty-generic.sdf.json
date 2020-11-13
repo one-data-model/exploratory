@@ -13,28 +13,23 @@
   "sdfProperty": {
     "sensorValue": {
       "description": "resource ID 5700", 
-      "type": "number", 
-      "subtype": "float"
+      "type": "number"
     }, 
     "minimumMeasuredValue": {
       "description": "resource ID 5601", 
-      "type": "number", 
-      "subtype": "float"
+      "type": "number"
     }, 
     "maximumMeasuredValue": {
       "description": "resource ID 5602", 
-      "type": "number", 
-      "subtype": "float"
+      "type": "number"
     }, 
     "minimumRangeValue": {
       "description": "resource ID 5603", 
-      "type": "number", 
-      "subtype": "float"
+      "type": "number"
     }, 
     "maximumRangeValue": {
       "description": "resource ID 5604", 
-      "type": "number", 
-      "subtype": "float"
+      "type": "number"
     }, 
     "applicationType": {
       "description": "resource ID 5750", 
