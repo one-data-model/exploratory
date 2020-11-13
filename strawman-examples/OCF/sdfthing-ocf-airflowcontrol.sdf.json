@@ -13,7 +13,7 @@
   "sdfObject": {
     
     "oic.r.switch.binary": {
-      "name": "oic.r.switch.binary",
+      "label": "oic.r.switch.binary",
       "description" : "This sdfObject describes a binary switch (on/off).\nThe Property \"value\" is a boolean.\nA value of 'true' means that the switch is on.\nA value of 'false' means that the switch is off.\n",
       "sdfRequired": [
         "#/sdfObject/oic.r.switch.binary/sdfProperty/value"
@@ -56,14 +56,14 @@
           "description": "The array of possible direction settings for this instance of the Resource Type.",
           "writable": false,
           "type": "array",
+          "minItems": 1,
+          "uniqueItems": true,
           "items": {
-            "minItems": 1,
-            "type": "string",
-            "uniqueItems": true
+            "type": "string"
           }
         },
         "range": {
-          "name": "range",
+          "label": "range",
           "description" : "applies to the allowed values of speed",
           "writable": false,
           "type": "array",
@@ -77,7 +77,7 @@
 
   "sdfThing": {
     "oic.r.airflowcontrol": {
-      "name": "oic.r.airflowcontrol",
+      "label": "oic.r.airflowcontrol",
       "description" : "",
       "sdfObject": {
         "_b0": {
