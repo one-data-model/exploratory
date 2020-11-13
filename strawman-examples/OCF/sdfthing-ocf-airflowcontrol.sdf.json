@@ -78,15 +78,13 @@
   "sdfThing": {
     "oic.r.airflowcontrol": {
       "label": "oic.r.airflowcontrol",
-      "description" : "",
+      "description" : "Composite of binary switch and airflow objects",
       "sdfObject": {
-        "_b0": {
-          "sdfRef": "#/sdfObject/oic.r.switch.binary",
-          "semanticTag": "power"
+        "power": {
+          "sdfRef": "#/sdfObject/oic.r.switch.binary"
         },
-        "_b1": {
-          "sdfRef": "#/sdfObject/oic.r.airflow",
-          "semanticTag": "airflow"
+        "airflow": {
+          "sdfRef": "#/sdfObject/oic.r.airflow"
         }
       }
     }
