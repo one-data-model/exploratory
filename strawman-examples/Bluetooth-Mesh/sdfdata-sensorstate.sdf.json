@@ -29,7 +29,7 @@
           "minimum": 1, 
           "maximum": 4095
         }, 
-        "SensorSamplingFunciton": {
+        "SensorSamplingFunction": {
           "sdfEnum": {
             "Unspecified": {}, 
             "Instantaneous": {}, 
@@ -108,7 +108,7 @@
         "StatusMinInterval": {
           "type": "number", 
           "multipleOf": 1, 
-          "minumum": 0, 
+          "minimum": 0, 
           "maximum": 26
         }, 
         "FastCadenceLow": {
