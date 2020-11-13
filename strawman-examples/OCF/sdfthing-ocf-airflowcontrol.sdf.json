@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
 
@@ -47,7 +47,6 @@
         "automode" : {
           "label": "automode",
           "description": "The status of the automode feature, if on speed is set by the Device.",
-          "type": "string",
           "sdfEnum": {
             "On": {},
             "Off": {}

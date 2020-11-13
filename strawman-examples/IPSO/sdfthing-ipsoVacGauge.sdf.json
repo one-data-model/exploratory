@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
   "sdfProduct": {
@@ -17,7 +17,7 @@
       "sdfObject": {
         "HighRangeSensor": {
           "description": "Map to Object Instance ID 3300/0",
-          "sdfRef": "ex:/sdfObject/genericSensor", 
+          "sdfRef": "ex:#/sdfObject/genericSensor", 
           "sdfProperty": {
             "minimumRange": {
               "const": -120000
@@ -38,7 +38,7 @@
         }, 
         "LowRangeSensor": {
           "description": "Map to Object Instance ID 3300/1",
-          "sdfRef": "ex:/sdfObject/genericSensor", 
+          "sdfRef": "ex:#/sdfObject/genericSensor", 
           "sdfProperty": {
             "minimumRange": {
               "const": 0

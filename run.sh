@@ -46,6 +46,7 @@ lint1() {
 
 case $# in
     0)
+        ruby pointercheck.rb `find . -name \*.sdf.json`
         git clone --depth 1 http://github.com/one-data-model/tools
         (cd tools/sdflint; npm install)
         find . -name \*.sdf.json -exec ./run.sh \{\} \;

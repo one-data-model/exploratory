@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
   "sdfObject": {
@@ -30,17 +30,17 @@
           "default": true
         }, 
         "OnTime": {
-          "sdfRef": "#/sdfData/TransitionTimeData", 
+          "sdfRef": "#/sdfObject/OnOff/sdfData/TransitionTimeData", 
           "label": "OnTime", 
           "default": 0
         }, 
         "OffWaitTime": {
-          "sdfRef": "#/sdfData/TransitionTimeData", 
+          "sdfRef": "#/sdfObject/OnOff/sdfData/TransitionTimeData", 
           "label": "OffWaitTime", 
           "default": 0
         }, 
         "StartUpOnOff": {
-          "sdfRef": "#/sdfData/StartUpOnOffMode", 
+          "sdfRef": "#/sdfObject/OnOff/sdfData/StartUpOnOffMode", 
           "label": "StartUpOnOff"
         }
       }, 
@@ -86,13 +86,15 @@
         }, 
         "OnWithTimedOff": {
           "label": "OnWithTimedOff", 
-          "type": "object",
-          "properties": {
-            "OnOffControl": {
-              "type": "object",
-              "properties" : {
-                "AcceptOnlyWhenOn": {
-                  "type": "boolean"
+          "sdfInputData": {
+            "type": "object",
+            "properties": {
+              "OnOffControl": {
+                "type": "object",
+                "properties" : {
+                  "AcceptOnlyWhenOn": {
+                    "type": "boolean"
+                  }
                 }
               }
             }

@@ -6,7 +6,7 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
   "defaultNamespace": "ex", 
   "sdfObject": {
@@ -117,12 +117,9 @@
       "sdfAction": {
         "MoveToLevel": {
           "label": "MoveToLevel", 
-          "sdfRequired": [
-            "#/sdfObject/Level/sdfAction/MoveToLevel/sdfInputData/properties/Level", 
-            "#/sdfObject/Level/sdfAction/MoveToLevel/sdfInputData/properties/TransitionTime"
-          ],
           "sdfInputData": {
             "type": "object",
+            "required": ["Level", "TransitionTime"],
             "properties": {
               "Level": {
                 "label": "Level", 
@@ -145,12 +142,9 @@
         }, 
         "Move": {
           "label": "Move", 
-          "sdfRequired": [
-            "#/sdfObject/Level/sdfAction/Move/sdfInputData/properties/MoveMode", 
-            "#/sdfObject/Level/sdfAction/Move/sdfInputData/properties/Rate"
-          ],
           "sdfInputData": {
             "type": "object",
+            "required": ["MoveMode", "Rate"],
             "properties": {
               "MoveMode": {
                 "label": "MoveMode", 
@@ -175,13 +169,9 @@
         }, 
         "Step": {
           "label": "Step", 
-          "sdfRequired": [
-            "#/sdfObject/Level/sdfAction/Step/sdfInputData/properties/StepMode",
-            "#/sdfObject/Level/sdfAction/Step/sdfInputData/properties/StepSize",
-            "#/sdfObject/Level/sdfAction/Step/sdfInputData/properties/TransitionTime"
-          ],
           "sdfInputData": {
             "type": "object",
+            "required": ["StepMode", "StepSize", "TransitionTime"],
             "properties": {
               "StepMode": {
                 "label": "Step mode", 
@@ -243,7 +233,7 @@
         "MoveToClosestFrequency": {
           "label": "MoveToClosestFrequency",
           "sdfRequired": [
-            "#/sdfObject/Level/sdfAction/Stop/sdfInputData/properties/Frequency"
+            "#/sdfObject/Level/sdfAction/MoveToClosestFrequency/sdfInputData/properties/Frequency"
           ],
           "sdfInputData": {
             "type": "object",

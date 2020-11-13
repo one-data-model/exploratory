@@ -6,8 +6,8 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#",
-    "pg": "https://onedm.org/playground/#"
+    "ex": "https://onedm.org/exploratory/",
+    "pg": "https://onedm.org/playground/"
   }, 
   "defaultNamespace": "ex", 
 
@@ -21,35 +21,42 @@
       ],
       "sdfProperty": {
         "machineState": {
-          "type": "string", 
-          "enum": [ "ready", "running", "paused" ]
+          "sdfEnum": {
+            "ready": {}, 
+            "running": {}, 
+            "paused": {}
+          }
         },
         "supportedMachineStates": {
           "type": "array",
           "items": {
-            "enum": [ "ready", "running", "paused" ]
+            "sdfEnum": {
+              "ready": {}, 
+              "running": {}, 
+              "paused": {}
+            }
           }
         },
         "ovenJobState": {
           "type": "string",
-          "enum": [
-            "cleaning",
-            "cooking",
-            "cooling",
-            "draining",
-            "preheat",
-            "ready",
-            "rinsing"
-          ]
+          "sdfEnum": {
+            "cleaning": {},
+            "cooking": {},
+            "cooling": {},
+            "draining": {},
+            "preheat": {},
+            "ready": {},
+            "rinsing": {}
+          }
         },
         "completionTime": {
-          "sdfRef": "pg:/sdfData/iso8601date"
+          "sdfRef": "ex:#/sdfData/iso8601date"
         },
         "operationTime": {
-          "sdfRef": "pg:/sdfData/PositiveInteger"
+          "sdfRef": "ex:#/sdfData/PositiveInteger"
         },
         "progress": {
-          "sdfRef": "pg:/sdfData/IntegerPercent"
+          "sdfRef": "ex:#/sdfData/IntegerPercent"
         }
       }, 
       "sdfAction": {
@@ -61,7 +68,7 @@
             "type": "object",
             "properties": {
               "ovenMode": {
-                "sdfRef": "ex:/sdfData/OvenMode"
+                "sdfRef": "ex:#/sdfData/OvenMode"
               }
             }
           }
@@ -72,12 +79,17 @@
             "type": "object",
             "properties": {
               "ovenMode": {
-                "sdfRef": "ex:/sdfData/OvenMode"
+                "sdfRef": "ex:#/sdfData/OvenMode"
               }
             }
           }
         }
       }
     }
+  },
+  "sdfData": {
+    "iso8601date": {"description": "tbd"},
+    "PositiveInteger": {"description": "tbd"},
+    "IntegerPercent": {"description": "tbd"}
   }
 }

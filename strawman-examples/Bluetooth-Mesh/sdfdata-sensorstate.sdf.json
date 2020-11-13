@@ -6,9 +6,9 @@
     "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
-  "defaultnamespace": "ex", 
+  "defaultNamespace": "ex", 
 
   "sdfData": {
     "SensorDescriptor": {
@@ -29,7 +29,7 @@
           "minimum": 1, 
           "maximum": 4095
         }, 
-        "SensorSamplingFunciton": {
+        "SensorSamplingFunction": {
           "sdfEnum": {
             "Unspecified": {}, 
             "Instantaneous": {}, 
@@ -71,7 +71,7 @@
           }
         }, 
         "SensorSettingRaw": {
-          "sdfRef": "#/sdfData/SensorSetting/sdfData/SensorSettingRawValueType"
+          "sdfRef": "#/sdfData/SensorSetting/properties/SensorSettingRawValueType"
         },
         "SensorSettingRawValueType": {
           "description": "any type defined by the sensor"
@@ -108,7 +108,7 @@
         "StatusMinInterval": {
           "type": "number", 
           "multipleOf": 1, 
-          "minumum": 0, 
+          "minimum": 0, 
           "maximum": 26
         }, 
         "FastCadenceLow": {
@@ -132,7 +132,7 @@
                   "sdfRef": "#/sdfData/PropertyIdType"
                 }, 
                 {
-                  "sdfRef": "#/sdfData/SensorData/sdfData/SensorDataRawValueType"
+                  "sdfRef": "#/sdfData/SensorData/properties/SensorDataRawValueType"
                 }
               ]
             }

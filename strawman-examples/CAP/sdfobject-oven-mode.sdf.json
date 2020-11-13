@@ -6,8 +6,8 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#",
-    "pg": "https://onedm.org/playground/#"
+    "ex": "https://onedm.org/exploratory/",
+    "pg": "https://onedm.org/playground/"
   }, 
   "defaultNamespace": "ex", 
 
@@ -21,12 +21,12 @@
       ],
       "sdfProperty": {
         "ovenMode": {
-            "sdfRef": "pg:sdfData/OvenMode"
+            "sdfRef": "ex:#/sdfData/OvenMode"
         },
         "supportedOvenModes": {
           "type": "array",
           "items": {
-            "sdfRef": "pg:sdfData/OvenMode"
+            "sdfRef": "ex:#/sdfData/OvenMode"
           }
         }
       }, 
@@ -39,7 +39,7 @@
             "type": "object",
               "properties": {
               "ovenMode": {
-                "sdfRef": "pg:sdfData/OvenMode"
+                "sdfRef": "ex:#/sdfData/OvenMode"
               }
             }
           }

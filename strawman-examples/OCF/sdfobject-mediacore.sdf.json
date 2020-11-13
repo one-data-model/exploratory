@@ -6,9 +6,9 @@
     "license": "http://example.com/license"
   }, 
   "namespace": {
-    "ex": "https://onedm.org/exploratory/#"
+    "ex": "https://onedm.org/exploratory/"
   }, 
-  "defaultnamespace": "ex", 
+  "defaultNamespace": "ex", 
 
   "sdfObject": {
     "MediaCore": {
