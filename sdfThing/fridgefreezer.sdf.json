@@ -1,0 +1,34 @@
+{
+  "info": {
+    "copyright": "copyright 2021 Carsten Bormann",
+    "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+    "title": "FridgeFreezer",
+    "version": "2021-03-29"
+  },
+  "sdfThing": {
+    "fridgefreezer": {
+      "description": "This is a simple example of a fridgefreezer, composed of two refrigeration components.",
+      "sdfObject": {
+        "fridge": {
+          "sdfRef": "#/sdfObject/refrigeration"
+        },
+        "freezer": {
+          "sdfRef": "#/sdfObject/refrigeration"
+        }
+      }
+    }
+  },
+  "sdfObject": {
+    "refrigeration": {
+      "sdfProperty": {
+        "set-temp": {
+          "type": "number"
+        },
+        "current-temp": {
+          "type": "number",
+          "writable": false
+        }
+      }
+    }
+  }
+}
