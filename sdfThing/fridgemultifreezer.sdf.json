@@ -1,0 +1,37 @@
+{
+  "info": {
+    "copyright": "copyright 2021  Carsten Bormann, Ari Keränen",
+    "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+    "title": "Fridge Multi-freezer",
+    "version": "2021-03-31"
+  },
+  "sdfThing": {
+    "FridgeMulti-freezer": {
+      "description": "This is an example of possible design for a fridge freezer that has 1 fridge and 5-10 freezer components.",
+      "sdfObject": {
+        "fridge": {
+          "sdfRef": "#/sdfObject/refrigeration"
+        },
+        "freezer": {
+          "$comment": "The min/maxItems would be new additions to the schema giving limits on how many objects of this kind can there be.",
+          "minItems" : 5,
+          "maxItems" : 10,
+          "sdfRef": "#/sdfObject/refrigeration"
+        }
+      }
+    }
+  },
+  "sdfObject": {
+    "refrigeration": {
+      "sdfProperty": {
+        "set-temp": {
+          "type": "number"
+        },
+        "current-temp": {
+          "type": "number",
+          "writable": false
+        }
+      }
+    }
+  }
+}
