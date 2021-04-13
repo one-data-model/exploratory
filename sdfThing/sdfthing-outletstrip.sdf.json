@@ -1,9 +1,17 @@
 
 
 {
-    "namespace": {
-        "pg": "https://onedm.org/playground"
+    "info": {
+        "copyright": "Copyright 2021  Michael Koster",
+        "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+        "title": "Outlet Strip Example",
+        "version": "2021-04-13"
     },
+    "namespace": {
+      "ex": "https://onedm.org/exploratory"
+    },
+    "defaultNamespace": "ex", 
+
     "sdfThing": {
         "OutletStripSKU126442775": {
             "sdfRef": "#/sdfThing/GenericOutletStrip",
