@@ -25,7 +25,9 @@
         "GenericOutletStrip": {
             "sdfThing": {
                 "outletArray": {
-                    "items":  "#/sdfThing/OutletUnit",
+                    "items":  { 
+                        "sdfRef": "#/sdfThing/OutletUnit" 
+                    },
                     "minItems": 1,
                     "maxItems": 20    
                 },
