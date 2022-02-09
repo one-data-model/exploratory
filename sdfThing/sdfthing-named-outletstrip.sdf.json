@@ -1,0 +1,84 @@
+
+
+{
+    "info": {
+        "copyright": "Copyright 2021  Michael Koster",
+        "license": "https://github.com/one-data-model/oneDM/blob/master/LICENSE",
+        "title": "Outlet Strip Example",
+        "version": "2021-04-13"
+    },
+    "namespace": {
+      "ex": "https://onedm.org/exploratory"
+    },
+    "defaultNamespace": "ex", 
+
+    "sdfThing": {
+        "OutletStripSKU126442775": {
+            "sdfRef": "#/sdfThing/GenericOutletStrip",
+            "sdfThing": {
+                "outletArray": {
+                    "sdfThing": {
+                        "Outlet1": {
+                            "sdfRef": "#/sdfThing/OutletUnit"
+                        },
+                        "Outlet2": {
+                            "sdfRef": "#/sdfThing/OutletUnit"
+                        },
+                        "Outlet3": {
+                            "sdfRef": "#/sdfThing/OutletUnit"
+                        },
+                        "Outlet4": {
+                            "sdfRef": "#/sdfThing/OutletUnit"
+                        },
+                        "Outlet5": {
+                            "sdfRef": "#/sdfThing/OutletUnit"
+                        },
+                        "Outlet6": {
+                            "sdfRef": "#/sdfThing/OutletUnit"
+                        }
+                    }   
+                }
+            }
+        },
+        "GenericOutletStrip": {
+            "sdfThing": {
+                "outletArray": {
+                    "items":  { 
+                        "sdfRef": "#/sdfThing/OutletUnit" 
+                    },
+                    "minItems": 1,
+                    "maxItems": 20    
+                },
+                "outletStripCommon": {
+                    "sdfObject": {
+                        "PowerSwitch": {
+                            "sdfRef": "pg:/#/sdfObject/On_Off_switch" 
+                        },
+                        "OvercurrentTrip": {
+                            "sdfRef": "pg:/#/sdfObject/energy.overload" 
+                        },
+                        "EnergyUsage": {
+                            "sdfRef": "pg:/#/sdfObject/energy.consumption" 
+                        },
+                        "Voltage": {
+                            "sdfRef": "pg:/#/sdfObject/Voltage" 
+                        }        
+                    }
+                }
+            }
+        },
+        "OutletUnit": {
+            "sdfObject": {
+                "PowerSwitch": {
+                    "sdfRef": "pg:/#/sdfObject/On_Off_switch" 
+                },
+                "OvercurrentTrip": {
+                    "sdfRef": "pg:/#/sdfObject/energy.overload" 
+                },
+                "EnergyUsage": {
+                    "sdfRef": "pg:/#/sdfObject/energy.consumption" 
+                }
+            }
+        }
+    }
+}
